@@ -1,3 +1,138 @@
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  justify-items: center;
+  align-items: center;
+}
 .hidden {
   display: none;
+}
+#clock {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  margin: 0;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 100px;
+  font-weight: 800;
+}
+#weather {
+  color: white;
+  align-self: flex-start;
+  font-size: 0.8rem;
+}
+#weather:hover {
+  color: rgb(222, 218, 159);
+}
+img {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  filter: brightness(40%);
+  opacity: 0.8;
+}
+#login-form {
+  text-align: center;
+  color: white;
+}
+#login-form input:first-child {
+  color: black;
+  text-align: center;
+  padding: 10px;
+  width: 200px;
+  background-color: rgb(204, 194, 61);
+  border: none;
+  border-radius: 20px;
+}
+#login-form input:first-child:hover {
+  background-color: rgb(240, 229, 106);
+}
+
+#login-form input:first-child:focus {
+  outline: none;
+}
+#login-form input:nth-child(2) {
+  margin-left: 5px;
+  width: 50px;
+  height: 35px;
+  border-radius: 14px;
+  border: none;
+  color: #373636;
+  background-color: rgb(156, 145, 145);
+  font-size: 10px;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px rgb(28, 24, 24);
+  font-weight: 700;
+}
+#login-form input:nth-child(2):hover {
+  background-color: rgb(192, 177, 190);
+}
+#login-form input:nth-child(2):active {
+  background-color: darkgray;
+  color: white;
+  outline: none;
+}
+#greeting {
+  font-size: 40px;
+  margin: 0 auto;
+  color: rgb(204, 194, 61);
+}
+#todo-form input {
+  text-align: center;
+  width: 690px;
+  height: 55px;
+  background-color: rgb(101, 125, 156);
+  color: black;
+  border: none;
+  border-radius: 40px;
+}
+#todo-form input:hover {
+  background-color: rgb(137, 160, 201);
+}
+#todo-form input:hover::-webkit-input-placeholder {
+  color: rgb(45, 41, 41);
+}
+#todo-form input:focus {
+  outline: none;
+}
+#todo-list {
+  text-align: center;
+  list-style: none;
+  padding-left: 0px;
+  margin-top: 25px;
+}
+#todo-list li {
+  margin-bottom: 0 auto;
+  width: 420px;
+  font-size: 1rem;
+  margin-top: 5px;
+  background-color: #534f4f;
+  color: rgb(197, 195, 195);
+}
+#todo-list button {
+  margin-left: 10px;
+  outline: none;
+  border: none;
+  background-color: #534f4f;
+  color: rgb(197, 195, 195);
+  font-size: 1rem;
+}
+#todo-list button:hover {
+  cursor: pointer;
+}
+#quote {
+  color: rgb(194, 188, 188);
+  align-self: flex-end;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
 }
