@@ -1,50 +1,51 @@
 const quotes = [
   {
-    quotes: "중요한건 꺾이지 않는 마음",
-    author: "Deft",
-  },
-  {
-    quotes: "살좀빼!",
-    author: "BJ Ralo",
+    quotes: "One day, my father, he told me, 'Son, don't let it slip away'",
+    author: "Avicii-The Nights",
   },
   {
     quotes:
-      "불편해? 불편하면 TLqkf 자세를 고쳐앉아 보는 자세가 잘못된거 아니에요",
-    author: "BJ Ralo",
-  },
-  {
-    quotes: "다 달에 가고 싶어하면 누가 지구에 남아서 버튼을 눌러주냐고",
-    author: "BJ Ralo",
+      "When you get older your wild heart will live for younger days Think of me if ever youre afraid",
+    author: "Avicii=The Nights",
   },
   {
     quotes:
-      "내가 누군가를 좋아한다는 사실이 그 사람에게는 상처가 될수도 있잖아요",
-    author: "BJ Ralo",
+      "One day, you'll leave this world behind So live a life you will remember",
+    author: "Avicii-The Nights",
   },
   {
-    quotes: "오늘 서폿 왜이래 아 오늘 왜이래!!",
-    author: "BJ Ralo",
+    quotes: "These are the nights that never die, My father told me",
+    author: "Avicii-The Nights",
   },
   {
-    quotes: "서폿은 도구다",
-    author: "Monster Rat",
+    quotes: "It's such a night, such a beautiful night",
+    author: "Avicii-Heaven",
   },
   {
-    quotes: "서폿을 탓한게 아니야. 탓하고 보니 서포터였던거지",
-    author: "APDO",
+    quotes: "I got to learn how to love without you",
+    author: "Avicii-Without you",
   },
   {
-    quotes: "못생긴X이 담배피는거만큼 꼴보기 싫은게 없어",
-    author: "BJ Ralo",
+    quotes: "I might hate myself tomorrow But I'm on my way tonight",
+    author: "Avicii-Lonely Together",
   },
   {
-    quotes: "자 드가자",
-    author: "BJ Ralo",
+    quotes: "There's nothing in this world I wouldn't do",
+    author: "Avicii-Hey Brother",
+  },
+  {
+    quotes: "Life's a game made for everyone And love is a prize",
+    author: "Avicii-Wake Me Up",
+  },
+  {
+    quotes:
+      "And if there's love in this life, there's no obstacle That can't be defeated",
+    author: "Avicii-Waiting for Love",
   },
 ];
 
-const quote = document.querySelector("#quote span:first-child");
-const author = document.querySelector("#quote span:last-child");
+const quote = document.querySelector("#quote div:first-child");
+const author = document.querySelector("#quote div:last-child");
 
 const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
 

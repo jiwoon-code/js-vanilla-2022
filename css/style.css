@@ -5,30 +5,41 @@ body {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   justify-items: center;
-  align-items: center;
+  padding: 18px;
 }
 .hidden {
   display: none;
+}
+.top-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 90%;
+}
+
+#fullYear {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
 }
 #clock {
   color: rgb(255, 255, 255);
   font-size: 30px;
   margin: 0;
   text-align: center;
-  padding-top: 30px;
-  font-size: 100px;
+  font-size: 80px;
   font-weight: 800;
 }
 #weather {
   color: white;
-  align-self: flex-start;
-  font-size: 0.8rem;
+  text-align: center;
+  font-size: 1.3rem;
 }
 #weather:hover {
   color: rgb(222, 218, 159);
 }
+
 img {
   position: absolute;
   width: 100vw;
@@ -43,6 +54,7 @@ img {
 #login-form {
   text-align: center;
   color: white;
+  align-self: center;
 }
 #login-form input:first-child {
   color: black;
@@ -86,12 +98,16 @@ img {
   font-size: 40px;
   margin: 0 auto;
   color: rgb(204, 194, 61);
+  align-self: center;
+}
+#todo-form {
+  align-self: center;
 }
 #todo-form input {
   text-align: center;
   width: 690px;
   height: 55px;
-  background-color: rgb(101, 125, 156);
+  background-color: rgb(112, 134, 163);
   color: black;
   border: none;
   border-radius: 40px;
@@ -118,6 +134,8 @@ img {
   margin-top: 5px;
   background-color: #534f4f;
   color: rgb(197, 195, 195);
+  height: 1.7rem;
+  border-radius: 10px;
 }
 #todo-list button {
   margin-left: 10px;
@@ -134,5 +152,97 @@ img {
   color: rgb(194, 188, 188);
   align-self: flex-end;
   margin-bottom: 10px;
-  font-size: 0.8rem;
+  flex-direction: column;
+  text-align: center;
+}
+#quote div:first-child {
+  color: rgb(194, 188, 188);
+  font-size: 1.4rem;
+  margin-bottom: 7px;
+}
+
+.dateHead div {
+  background: #fac478;
+  color: #3b2e1c;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 5px;
+}
+
+.grid div {
+  padding: 0.6rem;
+  font-size: 0.5rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.dateBoard div {
+  color: white;
+  font-weight: bold;
+  max-height: 1.8rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  text-align: center;
+}
+.dateTitle {
+  font-size: 12px;
+  font-weight: 600;
+}
+.emptyDay {
+  color: white;
+  font-weight: bold;
+  max-height: 1.8rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  color: whitesmoke;
+}
+
+.btn {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 3px solid #000;
+  border-width: 3px 3px 0 0;
+  cursor: pointer;
+}
+
+.prevDay {
+  transform: rotate(-135deg);
+}
+
+.nextDay {
+  transform: rotate(45deg);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.calender {
+  max-width: 360px;
+  padding: 0.3rem 1.4rem;
+  border-radius: 25px;
+  display: grid;
+  justify-self: flex-end;
+}
+
+.dateHead {
+  margin: 0.4rem 0;
 }

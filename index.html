@@ -8,29 +8,54 @@
     <title>Momentum App</title>
   </head>
   <body>
-    <div id="clock">00:00:00</div>
-    <div id="weather">
-      <span></span>
-      <span></span>
+    <div class="top-box">
+      <div></div>
+      <div class="date">
+        <div id="fullYear">YYYY-MM-DD</div>
+        <div id="clock">00:00:00</div>
+        <div id="weather">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="calender">
+        <div class="header">
+          <div class="btn prevDay"></div>
+          <h2 class="dateTitle"></h2>
+          <div class="btn nextDay"></div>
+        </div>
+
+        <div class="grid dateHead">
+          <div>일</div>
+          <div>월</div>
+          <div>화</div>
+          <div>수</div>
+          <div>목</div>
+          <div>금</div>
+          <div>토</div>
+        </div>
+
+        <div class="grid dateBoard"></div>
+      </div>
     </div>
     <form class="hidden" id="login-form">
       <input
         required
         maxlength="15"
         type="text"
-        placeholder="What is your name?"
+        placeholder="이름을 입력해 주세요"
       />
       <input type="submit" value="Log In" />
     </form>
     <h1 id="greeting" class="hidden"></h1>
 
     <form id="todo-form">
-      <input type="text" placeholder="Write a To Do and Press Enter" required />
+      <input type="text" placeholder="오늘의 할일은?" required />
     </form>
     <ul id="todo-list"></ul>
     <div id="quote">
-      <span></span>
-      <span></span>
+      <div></div>
+      <div></div>
     </div>
 
     <script src="js/greetings.js"></script>
@@ -39,5 +64,6 @@
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/calender.js"></script>
   </body>
 </html>
